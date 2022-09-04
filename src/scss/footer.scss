@@ -1,6 +1,7 @@
 .footer {
     background-color: $blackColor;
-    padding: rem(39) 0;
+    @include adaptiveValue("padding-top", 41,31);
+    @include adaptiveValue("padding-bottom", 41,20);
     line-height: math.div(19.36, 16);
 
     &__container {}
@@ -12,9 +13,16 @@
     gap: rem(57);
     justify-content: space-between;
     padding-bottom: rem(31);
+    @media (max-width:$mobile){
+        justify-content: space-evenly;
+    }
+    @media (max-width:rem(374.98)){
+        justify-content: space-between;
+        gap: rem(20);
+    }
 
     &__logo {
-        max-width: rem(177);
+        @include adaptiveValue("width", 177, 122);
         transition: opacity 0.3s ease 0s;
 
         @media (any-hover: hover) {
@@ -30,14 +38,21 @@
 
     &__form {
         position: relative;
+        @media (max-width:$mobile){
+            margin-bottom: rem(10);
+        }
     }
 
     &__input {
         background-color: #F2F2F2;
         padding: rem(12) rem(27);
         border-radius: rem(2);
-        @include adaptiveValue("width", 300, 209);
+        @include adaptiveValue("width", 300, 203);
         margin-right: rem(-6);
+        @media (max-width:rem(374.98)){
+            width: 80%;
+            margin-right: 0;
+        }
     }
 
     &__btn {
@@ -51,7 +66,10 @@
         font-weight: 600;
         border-radius: rem(2);
         transition: background-color 0.3s ease 0s;
-        @include adaptiveValue("width", 188, 133);
+        @include adaptiveValue("width", 188, 130);
+        @media (max-width:rem(374.98)){
+            width: 80%;
+        }
 
         @media (any-hover: hover) {
             &:hover {
@@ -63,10 +81,20 @@
 
 .footer-body {
     padding: rem(38) 0 rem(32) 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: rem(136) rem(320) rem(181) rem(205);
+    gap: rem(30);
     align-items: center;
     color: #fff;
     position: relative;
+    justify-content: space-between;
+    @media (max-width:rem(1024)){
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    @media (max-width:$mobile){
+        grid-template-columns: 1fr;
+    }
 
     &::after,
     &::before {
@@ -97,7 +125,14 @@
 }
 
 .footer-body-list {
-    @include adaptiveValue("margin-right", 118, 59);
+    @media (max-width:rem(1024)){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width:$mobile){
+        align-items: flex-end;
+    }
 
     &__item {
         &:not(:last-child) {
@@ -107,13 +142,15 @@
 
     &__link {
         font-weight: 500;
-
+        color: #fff;
         text-transform: uppercase;
+        @media (max-width:$mobile){
+            text-transform: none;
+        }
     }
 }
 
 .footer-body-contacts {
-    @include adaptiveValue("margin-right", 204, 102);
 
     &__item {
         &:not(:last-child) {
@@ -130,13 +167,14 @@
 }
 
 .footer-body-address {
-
-    @include adaptiveValue("margin-right", 93, 46);
+    @media (max-width:$mobile){
+        margin-bottom: rem(20);
+    }
 
     &__text {
         font-weight: 500;
 
-        margin-bottom: rem(4);
+        margin-bottom: rem(7);
     }
 
     &__link {
@@ -149,6 +187,10 @@
 .footer-body-socials {
     display: flex;
     gap: rem(37);
+    justify-content: center;
+    @media (max-width:$mobile){
+        margin-bottom: rem(10);
+    }
 
     &__item {
         font-size: rem(23);
@@ -159,7 +201,7 @@
 
 .footer-bottom {
     color: #fff;
-    padding-top: rem(41);
+    @include adaptiveValue("padding-top", 41,20);
     text-align: center;
 
     &__copy {
