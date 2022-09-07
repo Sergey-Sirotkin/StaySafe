@@ -1,7 +1,7 @@
 .hero {
     @include adaptiveValue("padding-top", 218, 80);
     padding-bottom: rem(106);
-    background-image: url('img/home/01.png');
+    background-image: url('@img/home/01.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -160,7 +160,7 @@
         }
 
         &::before {
-            content: url('img/decor-01.png');
+            content: url('@img/decor-01.png');
             position: absolute;
             bottom: rem(-40);
             right: rem(-65);
@@ -225,7 +225,7 @@
 .team {
     padding-top: rem(85);
     padding-bottom: rem(80);
-    background-image: url('img/bg.png');
+    background-image: url('@img/bg.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -249,7 +249,7 @@
         z-index: 1;
 
         &::before {
-            content: url('img/decor-02.png');
+            content: url('@img/decor-02.png');
             position: absolute;
             z-index: -1;
             transform: scale(0.72);
@@ -359,7 +359,7 @@
         text-align: center;
         position: relative;
         margin-bottom: rem(50);
-        background-image: url('img/decor-03.png');
+        background-image: url('@img/decor-03.png');
         background-repeat: no-repeat;
         background-position: 50% 100%;
 
@@ -462,7 +462,7 @@
 
 
 .contact {
-    background-image: url('img/home/bg-wheat.png');
+    background-image: url('@img/home/bg-wheat.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-top: rem(110);
@@ -1015,7 +1015,7 @@
 .reports {
     padding-top: rem(55);
     padding-bottom: rem(110);
-    background-image: url('img/bg.png');
+    background-image: url('@img/bg.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1028,7 +1028,7 @@
         padding-bottom: rem(20);
         @include adaptiveValue("padding-top", 60, 30);
         text-align: center;
-        background-image: url('img/decor-02.png');
+        background-image: url('@img/decor-02.png');
         background-repeat: no-repeat;
         background-position: 66% 75%;
 
@@ -1166,7 +1166,7 @@
     &__container {}
 
     &__title {
-        background-image: url('img/decor-03.png');
+        background-image: url('@img/decor-03.png');
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: 40%;
