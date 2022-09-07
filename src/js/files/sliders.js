@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -27,17 +27,18 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.swiper')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.actions-slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.swiper', { // Указываем скласс нужного слайдера
+		new Swiper('.actions-slider__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
-			autoHeight: true,
+			slidesPerView: 2,
+			spaceBetween: 65,
+
+			//autoHeight: true,
 			speed: 800,
 
 			//touchRatio: 0,
@@ -56,12 +57,12 @@ function initSliders() {
 			*/
 
 			// Пагинация
-			/*
+			
 			pagination: {
-				el: '.swiper-pagination',
+				el: '.actions-slide__bullets',
 				clickable: true,
 			},
-			*/
+			
 
 			// Скроллбар
 			/*
@@ -78,27 +79,25 @@ function initSliders() {
 			},
 
 			// Брейкпоинты
-			/*
+
 			breakpoints: {
 				320: {
 					slidesPerView: 1,
-					spaceBetween: 0,
+					spaceBetween: 80,
 					autoHeight: true,
 				},
 				768: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				1024: {
 					slidesPerView: 2,
 					spaceBetween: 20,
 				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
+				1240: {
+
 				},
 			},
-			*/
 			// События
 			on: {
 

@@ -1,1 +1,54 @@
-// Заголовки, общие БЄМ блоки и проче...
+.btn {
+    display: inline-flex;
+    padding: rem(15) rem(50);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    background-color: $blueColor;
+    border-radius: rem(2);
+    font-weight: 700;
+    line-height: math.div(19.36 , 16);
+    transition: background-color 0.3s ease 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: $lightBlueColor;
+        }
+    }
+}
+
+.subtitle {
+    color: $blueColor;
+    text-transform: uppercase;
+    @include adaptiveValue("font-size", 18, 12);
+    font-weight: 800;
+    line-height: math.div(21.78 , 18);
+}
+.title {
+    color: $blackColor;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: math.div(48 , 40);
+    @include adaptiveValue("font-size", 40, 24);
+}
+.swiper-button-prev,
+.swiper-button-next {
+background-color: $blueColor;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: rem(18);
+border-radius: rem(2);
+color: $whiteColor;
+font-size: rem(18);
+transition: background-color 0.3s ease 0s;
+@media (any-hover: hover){
+    &:hover{
+        background-color: $lightBlueColor;
+    }
+}
+}
+.swiper-button-next {
+    transform: rotate(180deg);
+}

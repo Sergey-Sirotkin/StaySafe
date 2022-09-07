@@ -62,7 +62,7 @@
         text-align: center;
         padding: rem(12) rem(27);
         background-color: $blueColor;
-        color: #fff;
+        color: $whiteColor;
         font-weight: 600;
         border-radius: rem(2);
         transition: background-color 0.3s ease 0s;
@@ -85,7 +85,7 @@
     grid-template-columns: rem(136) rem(320) rem(181) rem(205);
     gap: rem(30);
     align-items: center;
-    color: #fff;
+    color: $whiteColor;
     position: relative;
     justify-content: space-between;
     @media (max-width:rem(1024)){
@@ -142,7 +142,7 @@
 
     &__link {
         font-weight: 500;
-        color: #fff;
+        color: $whiteColor;
         text-transform: uppercase;
         @media (max-width:$mobile){
             text-transform: none;
@@ -200,7 +200,7 @@
 }
 
 .footer-bottom {
-    color: #fff;
+    color: $whiteColor;
     @include adaptiveValue("padding-top", 41,20);
     text-align: center;
 

@@ -1,16 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"StaySafe"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"StaySafe"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero-body">
+						<h1 class="hero-body__title">BRINGING HOPE <br> TO PEOPLE <br> IN WAR</h1>
+						<p class="hero-body__text">Ukrainian volunteers for Ukrainian people. From the day 1 of this
+							barbaric war. <br> We make a difference. Everyday.</p>
+						<a href="" class="hero-body__btn btn">Donate now</a>
+					</div>
+					<div data-da=".hero-body,767.98,2" class="hero-bottom">
+						<ul class="hero-bottom__socials">
+							<li class="hero-bottom__socials-item">
+								<a href="" class="hero-bottom__socials-link icon-facebook"></a>
+							</li>
+							<li class="hero-bottom__socials-item">
+								<a href="" class="hero-bottom__socials-link icon-instagram"></a>
+							</li>
+						</ul>
+						<p class="hero-bottom__socials-text">Subscribe to our social networks</p>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__body">
+						<p class="about__subtitle subtitle">We bring more than just humanitarian aid <br> We bring a
+							sense of
+							hope</p>
+						<h2 class="about__title title">TOGETHER FOR HUMANITY</h2>
+						<p class="about__text">We are a group of Ukrainian volunteers working tirelessly to help our
+							fellow citizens living near the front lines. Every day, we work to identify the most
+							pressing needs and deliver relief to those who are caught in dangerous and desperate
+							situations</p>
+						<p class="about__label">Every single day, we provide aid for:</p>
+						<div class="about-lists">
+							<ul class="about-lists__list">
+								<li class="about-lists__item">Hospitals</li>
+								<li class="about-lists__item">Liberated villages</li>
+								<li class="about-lists__item">Those in the closed zones</li>
+								<li class="about-lists__item">Displaced and divided families</li>
+							</ul>
+							<ul class="about-lists__list">
+								<li class="about-lists__item">Refugee centers</li>
+								<li class="about-lists__item">Elderly care homes</li>
+								<li class="about-lists__item">Orphanages</li>
+								<li class="about-lists__item">Dog shelters</li>
+							</ul>
+						</div>
+						<a href="" class="about__btn btn">What we do</a>
+					</div>
+					<div data-da=".about__body,991.98,3" class="about__image">
+						<img src="img/home/02.png" alt="about-img">
+					</div>
+				</div>
+			</section>
+			<section class="team">
+				<div class="team__container">
+					<p class="team__subtitle subtitle">We bring hope </p>
+					<h2 class="team__title title">meet the team</h2>
+					<p class="team__text">Coming together from a wide variety of backgrounds, our team of volunteers is
+						the backbone of STAY SAFE UA. Their dedication to the hard work, everyday, in c hallenging
+						conditions, made it possible to help hundreds of people in need. Read on to learn more about who
+						we are.</p>
+					<div class="team-body">
+						<div class="team-body__item">
+							<div class="team-body__img">
+								<img src="img/home/03.png" alt="team">
+							</div>
+							<p class="team-body__title">Taras Rokoshevskyi</p>
+							<p class="team-body__subtitle">Looking 2 steps ahead.</p>
+						</div>
+						<div class="team-body__item">
+							<div class="team-body__img">
+								<img src="img/home/04.png" alt="team">
+							</div>
+							<p class="team-body__title">Andriy Depko</p>
+							<p class="team-body__subtitle">Building trustworthy connections. </p>
+						</div>
+						<div class="team-body__item">
+							<div class="team-body__img">
+								<img src="img/home/05.png" alt="team">
+							</div>
+							<p class="team-body__title">Yuriy Kachmar</p>
+							<p class="team-body__subtitle">Making magic <br> with our logistics.</p>
+						</div>
+					</div>
+					<a href="" class="team__btn btn">Our team</a>
+				</div>
+			</section>
+			<section class="posts">
+				<div class="posts__container">
+					<h2 class="posts__title title">Do Well <span>By Doing Good</span></h2>
+					<div class="posts__items">
+						<div class="posts-item">
+							<div class="posts-item__image">
+								<img src="@img/home/06.png" alt="posts-img">
+							</div>
+							<h4 class="posts-item__title">Message In a Box</h4>
+							<p class="posts-item__text">You know exactly how your donation will be used. We source the
+								products in Ukraine in order to support local economy.</p>
+							<a href="" class="posts-item__link icon-arrow">Donate now</a>
+						</div>
+						<div class="posts-item">
+							<div class="posts-item__image">
+								<img src="@img/home/07.png" alt="posts-img">
+							</div>
+							<h4 class="posts-item__title">For Businesses</h4>
+							<p class="posts-item__text">Engage your customers and promote your brand by contributing to
+								the impactful humanitarian campaign.</p>
+							<a href="" class="posts-item__link icon-arrow">Show how</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact__container">
+					<div class="contact-form contact-form-home">
+						<h2 class="contact-form__title title">contact us</h2>
+						<div class="contact-form__image">
+							<img src="img/decor-01.png" alt="decor">
+						</div>
+						<p class="contact-form__text">Together we can help more. Please contact us for cooperation in
+							helping Ukraine.</p>
+						<form class="contact-form__form" action="#">
+							<ul class="contact-form__list">
+								<li class="contact-form__item">
+									<label class="contact-form__label" for="name">Name<span>*</span></label>
+									<input required id="name" type="text" class="contact-form__input">
+								</li>
+								<li class="contact-form__item">
+									<label class="contact-form__label" for="email">E-mail<span>*</span></label>
+									<input required id="email" type="email" class="contact-form__input">
+								</li>
+								<li class="contact-form__item">
+									<label class="contact-form__label" for="phone">Phone</label>
+									<input id="phone" type="tel" class="contact-form__input">
+								</li>
+								<li class="contact-form__item">
+									<label class="contact-form__label" for="message">Your message to us</label>
+									<textarea class="contact-form__textarea" id="message"></textarea>
+								</li>
+							</ul>
+							<button type="submit" class="contact-form__button btn">Submit</button>
+						</form>
+					</div>
+					<div class="contact-body">
+						<div class="contact-body__inner">
+							<h2 class="contact-body__title">STAY SAFE UA</h2>
+							<ul class="contact-body__list">
+								<li class="contact-body__item">
+									<p class="contact-body__label">PHONE</p>
+									<a href="" class="contact-body__link">+380 668 332 659</a>
+								</li>
+								<li class="contact-body__item">
+									<p class="contact-body__label">EMAIL</p>
+									<a href="" class="contact-body__link">humanity@staysafeukraine.org</a>
+								</li>
+								<li class="contact-body__item">
+									<p class="contact-body__label">WAREHOUSE ADDRESS</p>
+									<a href="" class="contact-body__link">Lapaivka 13,<br>81113 Lviv, Ukraine</a>
+								</li>
+								<li class="contact-body__item">
+									<p class="contact-body__text">JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV,
+										01001, UKRAINE <br> SWIFT code: PBANUA2X <br>EUR:
+										UA173052990000026001031015420<br>USD:
+										UA343052990000026009001030590 <br>PLN: UA363052990000026008041016898 <br>UAH:
+										UA343052990000026005021020777</p>
+								</li>
+							</ul>
+							<div class="contact-body-footer">
+								<p class="contact-body-footer__label">SOCIAL MEDIA</p>
+								<ul class="contact-body-footer__socials">
+									<li class="contact-body-footer__item">
+										<a href="" class="contact-body-footer__link icon-facebook"></a>
+									</li>
+									<li class="contact-body-footer__item">
+										<a href="" class="contact-body-footer__link icon-instagram"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="actions">
+				<div class="actions__container">
+					<h2 class="actions__title title">OUR ACTIONS</h2>
+					<p class="actions__subtitle">Check out some of our recent actions below and learn more about our
+						efforts!</p>
+					<div class="actions-slider">
+						<div class="actions-slider__slider swiper">
+							<div class="actions-slider__wrapper swiper-wrapper">
+								<div class="actions-slide swiper-slide">
+									<div class="actions-slide__inner">
+										<div class="actions-slide__image">
+											<img src="img/home/08.png" alt="actions-image">
+										</div>
+										<div class="actions-slide__decor">
+											<img src="img/home/decor-save.png" alt="actions-decor">
+										</div>
+										<div class="actions-slide__bullets"></div>
+										<div class="actions-slide__body">
+											<h4 class="actions-slide__title">Supporting Newborn Triplets!</h4>
+											<p class="actions-slide__text">On a trip to the city of Kharkhiv at the
+												beginning of July, several of our volunteers were put in contact with a
+												couple living in the nearby village of Odnorobivka. For several years,
+												this couple had been trying to have children – and now they were soon
+												expecting triplets! The mother had just been moved into the regional
+												hospital in the city of Poltava and was expected to give birth at the
+												beginning of August.</p>
+											<a href="" class="actions-slide__link btn">View more</a>
+										</div>
+									</div>
+								</div>
+								<div class="actions-slide swiper-slide">
+									<div class="actions-slide__inner">
+										<div class="actions-slide__image">
+											<img src="img/home/09.png" alt="actions-image">
+										</div>
+										<div class="actions-slide__decor">
+											<img src="img/home/decor-ukraine.png" alt="actions-decor">
+										</div>
+										<div class="actions-slide__bullets"></div>
+										<div class="actions-slide__body">
+											<h4 class="actions-slide__title">The Social Pharmacy at Zolochiv Hospital
+											</h4>
+											<p class="actions-slide__text">For the past six months, we at STAY SAFE UA
+												have delivered medical supplies to local hospitals around the regions of
+												Kharkiv and the Donbas. These hospitals have been in close proximity to
+												the front lines during the course of the Russian invasion, with some
+												being just 3 kilometers away from the fighting! As a result, these
+												hospitals, such as the one located in the town of Zolochiv are now the
+												first point of medical help for wounded Ukrainian soldiers.</p>
+											<a href="" class="actions-slide__link btn">View more</a>
+										</div>
+									</div>
+								</div>
+								<div class="actions-slide swiper-slide">
+									<div class="actions-slide__inner">
+										<div class="actions-slide__image">
+											<img src="img/home/20.png" alt="actions-image">
+										</div>
+										<div class="actions-slide__decor">
+											<img src="img/home/decor-save.png" alt="actions-decor">
+										</div>
+										<div class="actions-slide__bullets"></div>
+										<div class="actions-slide__body">
+											<h4 class="actions-slide__title">Bringing an Electrical Generator to the
+												Village</h4>
+											<p class="actions-slide__text">Last July, while on a delivery trip to the
+												northwestern village of Baranivka, our team of volunteers discovered
+												that the entire village no longer had access to electricity. Without
+												electricity, people’s lights no longer worked, the heating systems had
+												shut off and there was no longer running water in any of the houses.
+												Under normal circumstances, the village’s water is supplied by a nearby
+												river, which is pumped up into a water tower and then distributed
+												throughout the households. However, without electricity, the pump had
+												ceased to function.</p>
+											<a href="" class="actions-slide__link btn">View more</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="actions-slider__buttons">
+								<button type="button" class="swiper-button-prev icon-arrow"></button>
+								<button type="button" class="swiper-button-next icon-arrow"></button>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section class="reports">
+				<div class="reports__container">
+					<h2 class="reports__title title">photo reports</h2>
+					<p class="reports__subtitle">Click on the photo to find out more</p>
+					<div class="reports__gallery">
+						<div class="reports__item">
+							<div class="reports__image">
+								<img src="img/home/10.png" alt="reports-img">
+							</div>
+							<p class="reports__text">Here, our volunteers pose with the mayor of this small village
+								located on the outskirts of the eastern city of Kharkiv. We brought over three pallets
+								of food boxes to distribute among the inhabitants there.</p>
+						</div>
+						<div class="reports__item">
+							<div class="reports__image">
+								<img src="img/home/11.png" alt="reports-img">
+							</div>
+							<p class="reports__text">As we distribute food boxes, our volunteers often chat with the
+								locals to hear how they are doing, and the current problems they are facing. </p>
+						</div>
+						<div class="reports__item">
+							<div class="reports__image">
+								<img src="img/home/12.png" alt="reports-img">
+							</div>
+							<p class="reports__text">Our volunteer Taras helps a villager to carry an electrical
+								generator over to a nearby water tower. There, the generator will power a pump that will
+								give this village access to running water. </p>
+						</div>
+						<div class="reports__item">
+							<div class="reports__image">
+								<img src="img/home/13.png" alt="reports-img">
+							</div>
+							<p class="reports__text">Here’s always time during a delivery trip to cuddle with a puppy!
+							</p>
+						</div>
+						<div class="reports__item reports__item_big">
+							<div class="reports__image">
+								<img src="img/home/14.png" alt="reports-img">
+							</div>
+							<p class="reports__text">Taras unwraps the last pallet of food boxes that we have brought to
+								the rural village of Baranivka. Each box contains long-lasting items like flour, pasta,
+								canned meat, and beans.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="partners__container">
+					<div class="partners__title title">OUR PARTNERS</div>
+					<ul class="partners__list">
+						<li class="partners__item">
+							<img src="img/home/15.png" alt="partner">
+						</li>
+						<li class="partners__item">
+							<img src="img/home/16.png" alt="partner">
+						</li>
+						<li class="partners__item">
+							<img src="img/home/17.png" alt="partner">
+						</li>
+						<li class="partners__item">
+							<img src="img/home/18.png" alt="partner">
+						</li>
+						<li class="partners__item">
+							<img src="img/home/19.png" alt="partner">
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
