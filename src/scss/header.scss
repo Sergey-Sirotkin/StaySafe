@@ -16,7 +16,6 @@
 
 	&__logo {
 		display: inline-flex;
-		flex-shrink: 0;
 		@include adaptiveValue("width", 130, 90);
 		transition: all 0.3s ease 0s;
 
