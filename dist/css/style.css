@@ -310,6 +310,8 @@ h6 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -327,8 +329,21 @@ h6 {
   }
 }
 
+@supports (height: clamp( 1.5625rem , 1.3016304348rem  +  1.3043478261vw , 2.3125rem )) {
+  .header__logo {
+    height: clamp( 1.5625rem , 1.3016304348rem  +  1.3043478261vw , 2.3125rem );
+  }
+}
+
+@supports not (height: clamp( 1.5625rem , 1.3016304348rem  +  1.3043478261vw , 2.3125rem )) {
+  .header__logo {
+    height: calc(1.5625rem + 0.75 * (100vw - 20rem) / 57.5);
+  }
+}
+
 .header__logo img {
   width: 100%;
+  height: 100%;
 }
 
 .menu-open .header__logo {
@@ -2218,6 +2233,7 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 0;
   }
 
   .header__menu {
