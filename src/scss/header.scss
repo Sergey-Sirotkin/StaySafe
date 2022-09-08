@@ -100,17 +100,18 @@
 }
 
 .menu {
+	z-index: 3;
 
 	&__icon {}
 
 	&__body {
+
 
 		@media (max-width:$mobile) {
 			background-color: #161616;
 			position: fixed;
 			top: 0;
 			width: 100%;
-			z-index: 2;
 			padding-top: rem(96);
 		}
 	}

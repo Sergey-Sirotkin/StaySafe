@@ -3606,6 +3606,30 @@
             },
             on: {}
         });
+        if (document.querySelector(".photos-slider")) new core(".photos-slider__slider", {
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 10,
+            speed: 800,
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 80
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1240: {}
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
