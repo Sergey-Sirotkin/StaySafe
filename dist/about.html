@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/_head.htm',{
-"title":"StaySafe"
-})
+
+<head>
+	<title>StaySafe</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220909161854">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<a href="" class="menu__logo">
+							<img src="img/logo.png" alt="logo">
+						</a>
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">What we do</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">For businesses</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Our team</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__info">
+					<a href="" class="header__phone icon-phone">+380 668 332 659</a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
 		<main class="page">
 			<section class="about-us">
 				<div class="about-us__container">
@@ -136,10 +172,71 @@
 				</div>
 			</section>
 		</main>
-		@@include('html/_footer.htm',{})
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer-top">
+					<a href="" class="footer-top__logo">
+						<img src="img/logo.png" alt="logo">
+					</a>
+					<form data-da=".footer-body,767.98,2" class="footer-top__form" action="#">
+						<input type="email" placeholder="E-mail" class="footer-top__input">
+						<button class="footer-top__btn">Submit</button>
+					</form>
+				</div>
+				<div class="footer-body">
+					<ul data-da=".footer-top,767.98" class="footer-body-list">
+						<li class="footer-body-list__item">
+							<a href="" class="footer-body-list__link">What we do</a>
+						</li>
+						<li class="footer-body-list__item">
+							<a href="" class="footer-body-list__link">Who we are</a>
+						</li>
+						<li class="footer-body-list__item">
+							<a href="" class="footer-body-list__link">For businesses</a>
+						</li>
+					</ul>
+					<ul class="footer-body-contacts">
+						<li class="footer-body-contacts__item">
+							<p class="footer-body-contacts__text">PHONE</p>
+							<a href="" class="footer-body-contacts__link">+380 668 332 659</a>
+						</li>
+						<li class="footer-body-contacts__item">
+							<p class="footer-body-contacts__text">EMAIL</p>
+							<a href="" class="footer-body-contacts__link">humanity@staysafeukraine.org</a>
+						</li>
+					</ul>
+					<div class="footer-body-address">
+						<p class="footer-body-address__text">WAREHOUSE ADDRESS</p>
+						<a href="" class="footer-body-address__link">Lapaivka 13,<br> 81113 Lviv, Ukraine</a>
+					</div>
+					<ul class="footer-body-socials">
+						<li class="footer-body-socials__item">
+							<a href="" class="footer-body-socials__link icon-facebook"></a>
+						</li>
+						<li class="footer-body-socials__item">
+							<a href="" class="footer-body-socials__link icon-instagram"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<a href="" class="footer-bottom__copy">© 2022 by STAY SAFE UA</a>
+				</div>
+			</div>
+		</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220909161854"></script>
 </body>
 
 </html>
