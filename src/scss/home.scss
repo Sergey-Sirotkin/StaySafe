@@ -890,34 +890,6 @@
             margin-bottom: rem(20);
             gap: rem(11);
 
-            .swiper-pagination-bullet {
-                width: rem(18);
-                height: rem(18);
-                border-radius: 50%;
-                background-color: #CFCFCF;
-            }
-
-            .swiper-pagination-bullet-active {
-                width: rem(18);
-                height: rem(18);
-                border-radius: 50%;
-                background-color: #CFCFCF;
-                position: relative;
-                z-index: 1;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: rem(9);
-                    height: rem(9);
-                    border-radius: 50%;
-                    background-color: $blueColor;
-                    z-index: 2;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
         }
     }
 

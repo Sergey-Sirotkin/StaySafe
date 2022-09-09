@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"StaySafe"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="about-us">
+				<div class="about-us__container">
+					<div class="about-us__body">
+						<p class="about-us__subtitle subtitle">do well by doing good</p>
+						<h1 class="about-us__title title">About us</h1>
+						<p class="about-us__text">Before the Russian invasion, we were ordinary Ukrainians working as entrepreneurs, dentists, agricultural workers, pharmacists, and mechanical technicians, to name but a few! Now, we have all come together to form STAY SAFE UA, a humanitarian organization dedicated to helping the lives of Ukrainians living near the front lines of the Russian invasion.</p>
+					</div>
+					<div class="about-us-slider">
+						<div class="about-us-slider__slider swiper">
+							<div class="about-us-slider__wrapper swiper-wrapper">
+								<div class="about-us-slider__slide swiper-slide">
+									<img src="img/about/01.png" alt="about-us">
+								</div>
+								<div class="about-us-slider__slide swiper-slide">
+									<img src="img/about/02.png" alt="about-us">
+								</div>
+								<div class="about-us-slider__slide swiper-slide">
+									<img src="img/about/03.png" alt="about-us">
+								</div>
+							</div>
+							<div class="about-us-slider__buttons">
+								<button type="button" class="swiper-button-prev icon-arrow"></button>
+								<button type="button" class="swiper-button-next icon-arrow"></button>
+							</div>
+							<div class="about-us-slider__bullets"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="statistics">
+				<div class="statistics__container">
+					<div class="statistics__item">
+						<div class="statistics__image">
+							<img src="img/about/04.png" alt="statistics">
+						</div>
+						<div class="statistics__body">
+							<p class="statistics__title">1.5k</p>
+							<p class="statistics__subtitle"> People Assisted</p>
+						</div>
+					</div>
+					<div class="statistics__item">
+						<div class="statistics__image">
+							<img src="img/about/05.png" alt="statistics">
+						</div>
+						<div class="statistics__body">
+							<p class="statistics__title">200+</p>
+							<p class="statistics__subtitle"> Food Boxes Assembled</p>
+						</div>
+					</div>
+					<div class="statistics__item">
+						<div class="statistics__image">
+							<img src="img/about/06.png" alt="statistics">
+						</div>
+						<div class="statistics__body">
+							<p class="statistics__title">50+</p>
+							<p class="statistics__subtitle">Volunteers</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
