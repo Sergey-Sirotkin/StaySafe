@@ -49,7 +49,7 @@
         border-radius: rem(2);
         @include adaptiveValue("width", 300, 203);
         margin-right: rem(-6);
-        @media (max-width:rem(374.98)){
+        @media (max-width:rem(375)){
             width: 80%;
             margin-right: 0;
         }
@@ -67,7 +67,7 @@
         border-radius: rem(2);
         transition: background-color 0.3s ease 0s;
         @include adaptiveValue("width", 188, 130);
-        @media (max-width:rem(374.98)){
+        @media (max-width:rem(375)){
             width: 80%;
         }
 
