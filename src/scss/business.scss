@@ -1,7 +1,5 @@
 .businesses-hero {
     margin-top: rem(70);
-
-
     @include adaptiveValue("padding-bottom", 260, 10);
     position: relative;
 
@@ -37,8 +35,6 @@
             height: rem(450);
             bottom: 0;
         }
-
-
     }
 
     &__container {
@@ -109,7 +105,6 @@
             text-align: center;
         }
 
-
         p {
             &:not(:last-child) {
                 @include adaptiveValue("margin-bottom", 20, 10);
@@ -128,7 +123,6 @@
 }
 
 .hire {
-
     @include adaptiveValue("padding-top", 135, 105);
     @include adaptiveValue("padding-bottom", 135, 105);
 
@@ -150,7 +144,7 @@
     &__image {
         @include adaptiveValue("width", 512, 283);
         @include adaptiveValue("height", 163, 89);
-        flex: 0 1 512px;
+        flex: 0 1 rem(512);
 
         @media (max-width:$tablet) {
             flex: 0 1 auto;
@@ -164,7 +158,7 @@
     }
 
     &__body {
-        flex: 0 1 635px;
+        flex: 0 1 rem(635);
         position: relative;
 
         @media (max-width:$tablet) {
@@ -186,7 +180,6 @@
         line-height: 130.02%;
         margin-bottom: rem(34);
 
-
         &_bold {
             font-weight: 600;
             margin-top: rem(30);
@@ -201,8 +194,6 @@
             margin-bottom: 0;
         }
     }
-
-    &__list {}
 
     &__item {
         position: relative;
@@ -251,7 +242,6 @@
     }
 }
 
-
 .boxes {
     @include adaptiveValue("padding-top", 100, 80);
     padding-bottom: rem(90);
@@ -263,7 +253,6 @@
         display: flex;
         align-items: center;
         @include adaptiveValue("gap", 58, 40);
-
     }
 
     &__image {
@@ -314,14 +303,12 @@
     }
 }
 
-
 .do-well {
-    padding: 100px 0 100px 0;
-    @media (max-width:$mobile){
-        padding: 100px 0 70px 0;
-    }
+    padding: rem(100) 0 rem(100) 0;
 
-    &__container {}
+    @media (max-width:$mobile) {
+        padding: rem(100) 0 rem(70) 0;
+    }
 
     &__title {
         color: $blueColor;
@@ -336,7 +323,6 @@
     &__inner {
         display: flex;
         @include adaptiveValue("gap", 48, 17);
-
     }
 
     &__decor {
@@ -375,21 +361,21 @@
     &__item {
         display: flex;
         @include adaptiveValue("gap", 93, 0);
-        padding-top: 15px;
+        padding-top: rem(15);
 
         &:not(:last-child) {
-            margin-bottom: 75px;
+            margin-bottom: rem(75);
 
             @media (max-width:$tablet) {
-                margin-bottom: 85px;
+                margin-bottom: rem(85);
             }
 
             @media (max-width:$mobile) {
-                margin-bottom: 115px;
+                margin-bottom: rem(115);
             }
 
             @media (max-width:$mobileSmall) {
-                margin-bottom: 64px;
+                margin-bottom: rem(64);
             }
         }
 
@@ -401,10 +387,7 @@
         @media (max-width:$mobile) {
             align-items: inherit;
         }
-
     }
-
-    &__item-inner {}
 
     &__title {
         @include adaptiveValue("font-size", 34, 18);
@@ -440,9 +423,8 @@
     }
 }
 
-
 .get-contact {
-    padding-top: 125px;
+    padding-top: rem(125);
     padding-bottom: rem(107);
     background-image: url('@img/bg.png');
     background-repeat: no-repeat;
@@ -468,15 +450,15 @@
     }
 
     &__body {
-        flex: 0 1 536px;
+        flex: 0 1 rem(536);
 
-        @media (max-width:$pc){
-            flex: 0 0 536px;
+        @media (max-width:$pc) {
+            flex: 0 0 rem(536);
         }
 
         @media (max-width:$tablet) {
-            padding: 90px 20px 65px 20px;
-            margin: 0 -20px;
+            padding: rem(90) rem(20) rem(65) rem(20);
+            margin: 0 rem(-20);
             background-image: url('@img/bg.png');
             background-repeat: no-repeat;
             background-position: 50% 50%;
@@ -505,13 +487,15 @@
     }
 
     &__list {
-        padding-left: 65px;
+        padding-left: rem(65);
         position: relative;
         display: inline-block;
-        @media (max-width:$mobile){
+
+        @media (max-width:$mobile) {
             max-width: rem(335);
         }
-        @media (max-width:rem(374.98)){
+
+        @media (max-width:rem(374.98)) {
             max-width: rem(280);
         }
 
@@ -523,37 +507,42 @@
             background-color: $yellowColor;
             left: 3.5%;
             bottom: 21%;
-            @media (max-width:$pc){
+
+            @media (max-width:$pc) {
                 left: 7%;
             }
         }
 
-        &::after{
+        &::after {
             content: url('@img/business/decor-02.png');
             position: absolute;
             right: -31%;
             bottom: 70%;
-            @media (max-width:$tablet){
+
+            @media (max-width:$tablet) {
                 transform: rotate(-97deg) scale(-1, 1);
                 right: 0;
                 bottom: -11%;
             }
-            @media (max-width:$mobileSmall){
+
+            @media (max-width:$mobileSmall) {
                 right: 40%;
             }
         }
 
         @media (max-width:$pc) {
-            padding-left: 80px;
+            padding-left: rem(80);
         }
     }
 
     &__form {
-        flex: 0 1 528px;
-        @media (max-width:$tablet){
+        flex: 0 1 rem(528);
+
+        @media (max-width:$tablet) {
             @include adaptiveValue("width", 500, 280);
         }
-        @media (max-width:$mobileSmall){
+
+        @media (max-width:$mobileSmall) {
             width: 100%;
         }
     }
@@ -566,8 +555,6 @@
         gap: rem(37);
         font-size: rem(24);
     }
-
-    &__socials-item {}
 
     &__socials-link {
         color: $blackColor;
@@ -593,13 +580,13 @@
 
     span {
         position: absolute;
-        width: 55px;
-        height: 55px;
+        width: rem(55);
+        height: rem(55);
         display: flex;
         justify-content: center;
         align-items: center;
         font-weight: 700;
-        font-size: 21px;
+        font-size: rem(21);
         background-color: $yellowColor;
         color: $whiteColor;
         border-radius: 50%;
@@ -607,14 +594,14 @@
         top: 50%;
         bottom: 50%;
         transform: translate(0, -50%);
-        @media (max-width:$mobile){
+
+        @media (max-width:$mobile) {
             left: -32%;
         }
-        @media (max-width:rem(374.98)){
+
+        @media (max-width:rem(374.98)) {
             left: -43%;
         }
-
-
     }
 
     &__title {
@@ -631,43 +618,19 @@
     }
 }
 
-
-.get-contact {
-
-    &__form {}
-
-    &__socials {}
-
-    &__socials-item {}
-
-    &__socials-link {}
-}
-
-.contact-form {
+.contact-form-business {
     border-radius: rem(5);
     box-shadow: 0px 6px 71px rgba(0, 0, 0, 0.06), 0px 2.50666px 24.2265px rgba(0, 0, 0, 0.047044), 0px 1.34018px 13.1961px rgba(0, 0, 0, 0.0397896), 0px 0.751293px 7.76579px rgba(0, 0, 0, 0.0334222), 0px 0.399006px 4.51668px rgba(0, 0, 0, 0.0266873), 0px 0.166035px 2.14817px rgba(0, 0, 0, 0.0181181);
-    @media (max-width:$pc){
-        padding: rem(35) rem(30); 
-    }
-    @media (max-width:$tablet){
-        padding: rem(33) rem(26); 
+
+    @media (max-width:$pc) {
+        padding: rem(35) rem(30);
     }
 
-    &__title {
-        align-self: flex-start;
+    @media (max-width:$tablet) {
+        padding: rem(33) rem(26);
     }
+}
 
-    &__form {}
-
-    &__list {}
-
-    &__item {}
-
-    &__label {}
-
-    &__input {}
-
-    &__textarea {}
-
-    &__button {}
+.contact-form-title-business {
+    align-self: flex-start;
 }

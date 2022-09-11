@@ -93,8 +93,6 @@
     @include adaptiveValue("padding-top", 97, 55);
     @include adaptiveValue("padding-bottom", 100, 85);
 
-    &__container {}
-
     &__title {
         background-image: url('@img/decor-03.png');
         background-repeat: no-repeat;
@@ -138,3 +136,146 @@
     }
 }
 
+.contact-form {
+    background-color: $whiteColor;
+    border-radius: rem(5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(55) rem(84);
+
+    &__title {
+        text-align: center;
+        @include adaptiveValue("font-size", 44, 24);
+        line-height: math.div(53, 44);
+        margin-bottom: rem(5);
+    }
+
+    &__image {
+        transform: scale(0.957);
+        position: absolute;
+        top: 2%;
+        left: -24%;
+
+        @media (max-width:$pc) {
+            transform: scale(0.8);
+            top: -5%;
+            left: -14%;
+        }
+
+        @media (max-width:rem(1023.98)) {
+            transform: scale(0.7);
+            top: -9%;
+            left: -18%;
+        }
+
+        @media (max-width:$mobileSmall) {
+            transform: scale(0.51);
+            top: -9.5%;
+            left: -26%;
+        }
+    }
+
+    &__text {
+        max-width: rem(415);
+        @include adaptiveValue("font-size", 18, 16);
+        line-height: math.div(27, 18);
+        text-align: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__list {
+        padding: rem(30) 0;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: rem(14);
+        }
+    }
+
+    &__label {
+        display: block;
+        line-height: 130.02%;
+        margin-bottom: rem(2);
+
+        span {
+            color: #CF0000;
+            padding-left: rem(1);
+        }
+    }
+
+    &__input {
+        background: #F2F2F2;
+        width: 100%;
+        height: rem(45);
+        padding: rem(10);
+    }
+
+    &__textarea {
+        background: #F2F2F2;
+        width: 100%;
+        padding: rem(10);
+        height: rem(118);
+        resize: none;
+    }
+
+    &__button {
+        padding: rem(13) rem(30);
+    }
+}
+
+.scroll-up {
+    position: fixed;
+    right: rem(25);
+    bottom: rem(25);
+    z-index: 500;
+    width: rem(50);
+    height: rem(50);
+    color: $lightBlueColor;
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: rem(50);
+    box-shadow: inset 0 0 0 rem(4) $lightBlueColor;
+    opacity: 0;
+    transition: .2s;
+    transform: translateY(rem(25));
+
+    @media (any-hover: hover){
+        &:hover{
+            color: $blueColor;
+        }
+    }
+
+    &::before{
+        content:'↑';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: rem(20);
+    }
+
+    &__svg-path {
+        box-sizing: border-box;
+        fill: #fff;
+        stroke: $blueColor;
+        stroke-width: rem(4);
+        transition: .2s;
+    }
+}
+
+.scroll-up-active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}

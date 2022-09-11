@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     @include adaptiveValue("padding-top", 175, 115);
-    padding-bottom: 105px;
+    padding-bottom: rem(105);
 
     &__container {
         display: flex;
@@ -98,10 +98,6 @@
         max-width: 114%;
     }
 
-    &__slider {}
-
-    &__wrapper {}
-
     &__slide {
         max-width: rem(510);
         max-height: rem(460);
@@ -145,7 +141,6 @@
         margin-top: rem(27);
     }
 }
-
 
 .statistics {
     @include adaptiveValue("padding-top", 115, 70);
@@ -222,14 +217,13 @@
     }
 }
 
-
 .how-we-help {
     background-image: url('@img/bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
     @media (max-width:$mobile) {
-        padding-top: 65px;
+        padding-top: rem(65);
     }
 
     &__container {
@@ -256,7 +250,7 @@
         flex: 0 1 rem(508);
 
         @media (max-width:$tablet) {
-            flex: 0 0 375px;
+            flex: 0 0 rem(375);
         }
 
         @media (max-width:$mobile) {
@@ -278,7 +272,7 @@
 
     &__body {
         flex: 0 1 rem(650);
-        padding: 20px 0;
+        padding: rem(20) 0;
 
         @media (max-width:$tablet) {
             flex: 1 1 auto;
@@ -297,10 +291,12 @@
         background-image: url('@img/decor-05.png');
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        @media (max-width:$tablet){
+
+        @media (max-width:$tablet) {
             background-size: 90%;
         }
-        @media (max-width:$mobileSmall){
+
+        @media (max-width:$mobileSmall) {
             display: block;
             background-size: 59%;
             background-position: 8% 50%;
@@ -313,13 +309,9 @@
     }
 }
 
-
 .our-team {
     @include adaptiveValue("padding-top", 150, 100);
     @include adaptiveValue("padding-bottom", 195, 95);
-
-    &__container {
-    }
 
     &__title {
         @include adaptiveValue("font-size", 40, 24);
@@ -333,7 +325,8 @@
         justify-content: center;
         align-items: center;
         @include adaptiveValue("gap", 97, 53);
-        @media (max-width:rem(374.98)){
+
+        @media (max-width:rem(374.98)) {
             flex-direction: column;
         }
     }
@@ -348,11 +341,11 @@
         @include adaptiveValue("margin-bottom", 14, 8);
         width: rem(230);
         height: rem(230);
-        @media (max-width:$mobile){
+
+        @media (max-width:$mobile) {
             width: rem(135);
             height: rem(135);
         }
-        
 
         img {
             width: 100%;
@@ -371,4 +364,3 @@
         text-align: center;
     }
 }
-

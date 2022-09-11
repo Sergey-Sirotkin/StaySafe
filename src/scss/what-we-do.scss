@@ -5,13 +5,13 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-
     &__container {
         display: flex;
         align-items: center;
         gap: rem(20);
         justify-content: space-between;
-        @media (max-width:$tablet){
+
+        @media (max-width:$tablet) {
             justify-content: center;
             align-items: center;
         }
@@ -20,7 +20,8 @@
     &__body {
         flex: 0 1 52%;
         min-width: rem(470);
-        @media (max-width:$tablet){
+
+        @media (max-width:$tablet) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -32,7 +33,8 @@
 
     &__subtitle {
         @include adaptiveValue("margin-bottom", 10, 4);
-        @media (max-width:$tablet){
+
+        @media (max-width:$tablet) {
             text-align: center;
         }
     }
@@ -41,34 +43,36 @@
         margin-bottom: rem(30);
         position: relative;
         z-index: 1;
-        &::before{
-            content:url('@img/decor-01.png');
+
+        &::before {
+            content: url('@img/decor-01.png');
             position: absolute;
             transform: scale(0.69);
             top: -100%;
             left: -21%;
             z-index: -1;
-            @media (max-width:$tablet){
+
+            @media (max-width:$tablet) {
                 transform: scale(0.5);
                 top: -143%;
                 left: -53%;
             }
-            @media (max-width:$mobile){
+
+            @media (max-width:$mobile) {
                 transform: scale(0.37);
                 top: -170%;
                 left: -70%;
             }
-            @media (max-width:$mobileSmall){
+
+            @media (max-width:$mobileSmall) {
                 top: -210%;
                 left: -80%;
             }
         }
-        @media (max-width:$tablet){
+
+        @media (max-width:$tablet) {
             text-align: center;
         }
-    }
-
-    &__list {
     }
 
     &__item {
@@ -77,8 +81,9 @@
         }
 
         position: relative;
-        &::before{
-            content:'';
+
+        &::before {
+            content: '';
             position: absolute;
             width: rem(9);
             height: rem(9);
@@ -98,23 +103,28 @@
     &__image {
         width: rem(545);
         position: relative;
-        &::before{
-            content:url('@img/decor-07.png');
+
+        &::before {
+            content: url('@img/decor-07.png');
             position: absolute;
             top: -5%;
             left: -7%;
-            @media (max-width:$pc){
+
+            @media (max-width:$pc) {
                 top: 0;
                 left: 0;
             }
-            @media (max-width:$tablet){
+
+            @media (max-width:$tablet) {
                 display: none;
             }
         }
-        &::after{
-            content:url('@img/decor-08.png');
+
+        &::after {
+            content: url('@img/decor-08.png');
             display: none;
-            @media (max-width:$tablet){
+
+            @media (max-width:$tablet) {
                 display: inherit;
                 position: absolute;
                 bottom: -6%;
@@ -123,13 +133,16 @@
         }
 
         @include adaptiveValue("height", 564, 345);
-        @media (max-width:$tablet){
+
+        @media (max-width:$tablet) {
             margin-bottom: rem(50);
         }
-        @media (max-width:rem(580)){
+
+        @media (max-width:rem(580)) {
             width: 100%;
         }
-        @media (max-width:$mobileSmall){
+
+        @media (max-width:$mobileSmall) {
             width: 114%;
         }
 
@@ -150,7 +163,6 @@
     &__container {
         display: flex;
         flex-direction: column;
-        
     }
 
     &__title {
@@ -160,7 +172,8 @@
         background-image: url('@img/decor-02.png');
         background-repeat: no-repeat;
         background-position: 63% 40%;
-        @media (max-width:$mobileSmall){
+
+        @media (max-width:$mobileSmall) {
             background-size: 45%;
             background-position: 94% 40%;
         }
@@ -185,15 +198,18 @@
         @include adaptiveValue("gap", 20, 13);
         font-weight: 700;
         transition: all 0.3s ease 0s;
-        @media (any-hover: hover){
-            &:hover{
+
+        @media (any-hover: hover) {
+            &:hover {
                 color: $lightBlueColor;
-                &::before{
+
+                &::before {
                     transform: rotate(0);
                 }
             }
         }
-        &::before{
+
+        &::before {
             transition: all 0.3s ease 0s;
             transform: rotate(180deg);
             font-size: rem(26);
@@ -202,23 +218,25 @@
 }
 
 .news-item {
-    padding: rem(18) rem(20) rem(29) rem(20); 
+    padding: rem(18) rem(20) rem(29) rem(20);
     background-color: $whiteColor;
     box-shadow: 0px 0px 42px rgba(0, 0, 0, 0.04), 0px 0px 17.5466px rgba(0, 0, 0, 0.0287542), 0px 0px 9.38125px rgba(0, 0, 0, 0.0238443), 0px 0px 5.25905px rgba(0, 0, 0, 0.02), 0px 0px 2.79304px rgba(0, 0, 0, 0.0161557), 0px 0px 1.16225px rgba(0, 0, 0, 0.0112458);
     border-radius: rem(10);
     max-width: rem(350);
-    @media (max-width:rem(374.98)){
+
+    @media (max-width:rem(374.98)) {
         max-width: 100%;
     }
 
     &__image {
-        
         width: rem(310);
         height: rem(200);
         margin-bottom: rem(20);
-        @media (max-width:rem(374.98)){
+
+        @media (max-width:rem(374.98)) {
             width: 100%;
         }
+
         img {
             width: 100%;
             height: 100%;
@@ -242,14 +260,14 @@
     }
 }
 
-
 .help {
     background-image: url('@img/what-we-do/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     @include adaptiveValue("padding-top", 170, 140);
     @include adaptiveValue("padding-bottom", 170, 130);
-    padding-top: 140px;
+    padding-top: rem(140);
+
     &__container {
         text-align: center;
         max-width: rem(1004);
@@ -264,6 +282,7 @@
         color: $whiteColor;
         @include adaptiveValue("font-size", 21, 16);
         line-height: 130.02%;
+
         &:not(:last-child) {
             margin-bottom: rem(40);
         }
@@ -274,7 +293,8 @@
         justify-content: center;
         align-items: center;
         @include adaptiveValue("gap", 16, 20);
-        @media (max-width:$mobile){
+
+        @media (max-width:$mobile) {
             flex-direction: column-reverse;
         }
     }
@@ -285,8 +305,9 @@
         &_white {
             background-color: $whiteColor;
             color: $blueColor;
-            @media (any-hover: hover){
-                &:hover{
+
+            @media (any-hover: hover) {
+                &:hover {
                     color: $whiteColor;
                 }
             }
@@ -298,10 +319,6 @@
     @include adaptiveValue("padding-top", 100, 35);
     @include adaptiveValue("padding-bottom", 100, 140);
 
-    &__container {
-
-    }
-
     &__title {
         text-align: center;
         color: $blueColor;
@@ -310,10 +327,12 @@
         background-image: url('@img/decor-04.png');
         background-repeat: no-repeat;
         background-position: 50% 0;
-        @media (max-width:$mobile){
+
+        @media (max-width:$mobile) {
             margin-bottom: 0;
         }
-        @media (max-width:$mobileSmall){
+
+        @media (max-width:$mobileSmall) {
             background-size: 58%;
             background-position: 50% 35%;
         }
@@ -321,7 +340,8 @@
 
     &__subtitle {
         display: none;
-        @media (max-width:$mobile){
+
+        @media (max-width:$mobile) {
             display: block;
             margin-bottom: rem(26);
             text-align: center;
@@ -330,14 +350,6 @@
 }
 
 .photos-slider {
-
-
-    &__slider {
-    }
-
-    &__wrapper {
-        
-    }
 
     &__buttons {
         display: flex;
@@ -348,14 +360,14 @@
 }
 
 .photos-slide {
-    
 
     &__inner {
         position: relative;
         margin: 0 auto;
         @include adaptiveValue("width", 380, 348);
         @include adaptiveValue("height", 400, 325);
-        @media (max-width:rem(374.98)){
+
+        @media (max-width:rem(374.98)) {
             width: rem(280);
             height: rem(300);
         }
@@ -378,8 +390,6 @@
         height: 100%;
         z-index: 1;
         position: relative;
-
-        
 
         &::before {
             transition: all 0.3s ease 0s;
@@ -413,10 +423,8 @@
         padding: 0 rem(25) 0 rem(25);
         line-height: 130.02%;
 
-        @media (max-width:rem(374.98)){
+        @media (max-width:rem(374.98)) {
             max-width: rem(280);
         }
     }
 }
-
-

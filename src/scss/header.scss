@@ -56,7 +56,6 @@
 				left: 0;
 			}
 		}
-
 	}
 
 	&__info {
@@ -102,10 +101,7 @@
 .menu {
 	z-index: 3;
 
-	&__icon {}
-
 	&__body {
-
 
 		@media (max-width:$mobile) {
 			background-color: #161616;
@@ -217,11 +213,10 @@
 			height: rem(3);
 			background-color: $whiteColor;
 			border-radius: rem(2);
-
 		}
 
 		&::before {
-			top: 1px;
+			top: rem(1);
 		}
 
 		&::after {
@@ -229,7 +224,7 @@
 		}
 
 		span {
-			top: calc(50% - 1px);
+			top: calc(50% - rem(1));
 		}
 
 		.menu-open & {

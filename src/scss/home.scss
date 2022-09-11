@@ -19,7 +19,6 @@
         line-height: math.div(88.02, 80);
         font-weight: 900;
         color: $yellowColor;
-
         max-width: rem(667);
         margin-bottom: rem(20);
 
@@ -39,8 +38,6 @@
             display: none;
         }
     }
-
-    &__btn {}
 }
 
 .hero-bottom {
@@ -64,8 +61,6 @@
             margin-top: rem(300);
         }
     }
-
-    &__socials-item {}
 
     &__socials-link {
         font-size: rem(23);
@@ -141,6 +136,7 @@
     }
 
     &__btn {
+
         @media (max-width:rem(424.98)) {
             display: flex;
             max-width: rem(193);
@@ -199,8 +195,6 @@
         gap: rem(12);
     }
 
-    &__list {}
-
     &__item {
         position: relative;
 
@@ -229,7 +223,6 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-
 
     &__container {
         display: flex;
@@ -271,7 +264,6 @@
 
     &__title {
         margin-bottom: rem(10);
-
     }
 
     &__text {
@@ -279,8 +271,6 @@
         max-width: rem(1018);
         line-height: math.div(22, 18);
     }
-
-    &__btn {}
 }
 
 .team-body {
@@ -351,8 +341,6 @@
     @include adaptiveValue("padding-top", 150, 0);
     @include adaptiveValue("padding-bottom", 100, 20);
 
-    &__container {}
-
     &__title {
         display: flex;
         flex-direction: column;
@@ -380,7 +368,6 @@
 
         span {
             color: $blueColor;
-
         }
     }
 
@@ -460,7 +447,6 @@
     }
 }
 
-
 .contact {
     background-image: url('@img/home/bg-wheat.png');
     background-repeat: no-repeat;
@@ -473,7 +459,6 @@
         background-size: inherit;
     }
 
-
     &__container {
         position: relative;
 
@@ -483,100 +468,6 @@
             align-items: center;
             gap: rem(120);
         }
-    }
-}
-
-.contact-form {
-    background-color: $whiteColor;
-    border-radius: rem(5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: rem(55) rem(84);
-
-    &__title {
-        text-align: center;
-        @include adaptiveValue("font-size", 44, 24);
-        line-height: math.div(53, 44);
-        margin-bottom: rem(5);
-    }
-
-    &__image {
-        transform: scale(0.957);
-        position: absolute;
-        top: 2%;
-        left: -24%;
-
-        @media (max-width:$pc) {
-            transform: scale(0.8);
-            top: -5%;
-            left: -14%;
-        }
-
-        @media (max-width:rem(1023.98)) {
-            transform: scale(0.7);
-            top: -9%;
-            left: -18%;
-        }
-
-        @media (max-width:$mobileSmall) {
-            transform: scale(0.51);
-            top: -9.5%;
-            left: -26%;
-        }
-    }
-
-    &__text {
-        max-width: rem(415);
-        @include adaptiveValue("font-size", 18, 16);
-        line-height: math.div(27, 18);
-        text-align: center;
-    }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    &__list {
-        padding: rem(30) 0;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-bottom: rem(14);
-        }
-    }
-
-    &__label {
-        display: block;
-        line-height: 130.02%;
-        margin-bottom: rem(2);
-
-        span {
-            color: #CF0000;
-            padding-left: rem(1);
-        }
-    }
-
-    &__input {
-        background: #F2F2F2;
-        width: 100%;
-        height: rem(45);
-        padding: rem(10);
-    }
-
-    &__textarea {
-        background: #F2F2F2;
-        width: 100%;
-        padding: rem(10);
-        height: rem(118);
-        resize: none;
-    }
-
-    &__button {
-        padding: rem(13) rem(30);
     }
 }
 
@@ -642,7 +533,6 @@
         @media (max-width:rem(1023.98)) {
             margin: 0;
         }
-
     }
 
     &__title {
@@ -725,11 +615,10 @@
 
 .contact-body__text,
 .contact-body__link,
-.contact-body__label,
-{
-&::selection {
+.contact-body__label {
+    &::selection {
     background-color: $yellowColor;
-}
+    }
 }
 
 .contact-body-footer {
@@ -759,21 +648,14 @@
         @include adaptiveValue("gap", 30, 15);
     }
 
-    &__item {}
-
     &__link {
         font-size: rem(24);
     }
 }
 
-
-
-
 .actions {
     @include adaptiveValue("padding-top", 100, 20);
     @include adaptiveValue("padding-bottom", 100, 75);
-
-    &__container {}
 
     &__title {
         margin-bottom: rem(5);
@@ -795,24 +677,21 @@
 .actions-slider {
     @media (max-width:$pc) {}
 
-
     &__slider {
         padding: 0 rem(30);
-        margin: 0 -80px 0 -30px;
+        margin: 0 rem(-80) 0 rem(-30);
 
         @media (max-width:rem(1023.98)) {
-            margin: 0 -30px 0 -30px;
+            margin: 0 rem(-30) 0 rem(-30);
         }
     }
-
-    &__wrapper {}
 
     &__buttons {
         display: flex;
         gap: rem(18);
         justify-content: center;
         @include adaptiveValue("margin-top", 60, 35);
-        margin-left: -51px;
+        margin-left: rem(-51);
 
         @media (max-width:rem(1023.98)) {
             margin-left: 0;
@@ -825,7 +704,6 @@
 }
 
 .actions-slide {
-
 
     &__inner {
         @include adaptiveValue("width", 565, 0);
@@ -856,15 +734,13 @@
 
         @media (max-width:rem(1023.98)) {
             width: 100%;
-            height: 350px;
+            height: rem(350);
         }
 
         @media (max-width:$mobileSmall) {
             margin: rem(23) 0 rem(25) 0;
             height: rem(240);
         }
-
-
 
         img {
             width: 100%;
@@ -879,7 +755,6 @@
         top: 0;
         left: -5%;
         z-index: 2;
-
     }
 
     &__bullets {
@@ -908,15 +783,15 @@
         flex-direction: column;
 
         @media (max-width:$pc) {
-            width: 420px;
-            height: 215px;
-            left: 30px;
-            bottom: 25px;
+            width: rem(420);
+            height: rem(215);
+            left: rem(30);
+            bottom: rem(25);
             padding: rem(21) rem(21) rem(16) rem(21);
         }
 
         @media (max-width:rem(1023.98)) {
-            left: 10px;
+            left: rem(10);
         }
 
         @media (max-width:$mobileSmall) {
@@ -967,7 +842,7 @@
             -webkit-line-clamp: inherit;
             display: inherit;
             -webkit-box-orient: inherit;
-            padding: 0 20px 0 0;
+            padding: 0 rem(20) 0 0;
         }
     }
 
@@ -983,7 +858,6 @@
     }
 }
 
-
 .reports {
     padding-top: rem(55);
     padding-bottom: rem(110);
@@ -991,8 +865,6 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-
-    &__container {}
 
     &__title {
         @include adaptiveValue("font-size", 44, 24);
@@ -1129,5 +1001,3 @@
         }
     }
 }
-
-
